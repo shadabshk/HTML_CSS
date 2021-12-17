@@ -1,0 +1,190 @@
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    overflow-x: hidden;
+   
+}
+#main_content{
+    display:flex;
+
+}
+nav {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header_nav{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+}
+
+#prof_pic{
+        display: flex;
+        height:32px;
+        width:32px;
+        border-radius: 50%;
+        padding:10px;
+}
+#prof_pic:hover{
+    box-shadow: 0 0 3px 0 rgb(90, 138, 135);
+    border-radius: 50px;
+}
+#grid:hover{
+    box-shadow: 0 0 3px 0 rgb(90, 138, 135);
+    border-radius: 50px;
+}
+#grid{
+    display:flex;
+    align-items: center;
+    padding:5px;
+    padding-top: 15px;
+    height:20px;
+    width:20px;
+    
+    
+}
+.links{
+    margin:10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:black
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.topbar{
+    border-bottom:50px;
+
+}
+
+.input_container{
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+    width:600px;
+    border:1px solid gainsboro;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+.input_container > input{
+    flex-grow: 1;
+    border:none;
+    outline: none;
+}
+
+.input_container:hover{
+    box-shadow:0 0 10px 0 gainsboro ;
+}
+img:hover{
+    cursor: pointer;
+}
+.mybutton{
+    padding-top: 20px;
+}
+
+button {
+    background-color: #F8F9FA;
+    border-radius: 5px;
+    border: none;
+    height: 36px;
+    padding:0 20px;
+    margin:10px 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+#languages{
+    margin-top:10px;
+   
+}
+.lang{
+    font-family: arial,sans-serif;
+
+    text-decoration: none;
+    color:#1a0dab;
+    font-size: 13px;
+    display: inline-block;
+    
+   
+}
+
+.lang:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.India{
+    padding:15px 30px;
+    font-size: 15px;
+    margin-top: 50px;
+    border-bottom: 1px solid #dadce0;
+    color:#70757a;
+    background-color: #f2f2f2;
+}
+.footerdet{
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-evenly;
+    padding:15px 30px;
+    background-color: #f2f2f2;
+    
+    
+    
+}
+
+.foot{
+    text-decoration: none;
+    color:#70757a;
+}
+
+.foot:hover{
+    text-decoration: underline;
+
+}
+
+#sbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#footbot{
+    position:fixed;
+    bottom: 0;
+    width:100vw;
+}
+
+@media (max-width: 630px){
+    #footbot{
+        flex-direction: column;
+        
+        justify-content: center;
+        width:100vw;
+    }
+    .footerdet{
+        justify-content: space-evenly;
+        width:100vw;
+    }
+    .India{
+        width:100vw;
+    }
+}
